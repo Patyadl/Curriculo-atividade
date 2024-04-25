@@ -5,10 +5,10 @@ body{
 }
 section{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
-   
+
 }
 div.frase{
     display: flex;
@@ -30,4 +30,22 @@ div.cadastro{
    background-color: whitesmoke;
    font-size: large;
   
+}
+div.cadastro form{
+   margin: 5rem;
+}
+.cadastrados h5{
+    text-align: center; 
+    border: 1px solid rgb(12, 98, 227);
+    border-radius: 5px;
+     width: 15rem;
+}
+.cadastrados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cadastrados h5:hover{
+    background-color: rgb(12, 98, 227) ;
+    color: whitesmoke;
 }
