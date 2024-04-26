@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+    <title>Meu Currículo</title>
+</head>
+<body>
+    <section>
+        <div class="frase">
+            <h1>Cadastre <br>seu currículo!</h1>
+        </div>
+
+        <div class="cadastro">
+            <form action="/dados" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            
+                <label for="idade">Idade:</label>
+                <input type="text" id="idade" name="idade">
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+               
+                <br>
+                <label for="educacao">Curso Superior:</label>
+                <input type="text" id="educacao" name="educacao"><br>
+               <br>
+            
+              <button type="submit">Enviar</button>
+             
+              <div class="cadastrados">
+                <h5 >Currículos cadastrados</h5 style="text-align: center;">
+                    
+              </div>
+              <button type="reset">Deletar</button>
+              <button type="submit">Atualizar</button>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>
+

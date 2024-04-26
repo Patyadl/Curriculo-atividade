@@ -1,0 +1,14 @@
+
+import { Router } from 'express'
+import { nomeRoutes } from './nomes.mjs'
+import { cursosRoutes } from './cursos.mjs'
+import { idadeRoutes } from './idade.mjs';
+import { emailRoutes } from './email.mjs';
+const routes = Router();
+
+routes.use('/', nomeRoutes);
+routes.use('/', cursosRoutes);
+routes.use('/', idadeRoutes);
+routes.use('/',emailRoutes);
+
+export { routes };

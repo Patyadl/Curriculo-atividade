@@ -1,0 +1,51 @@
+body{
+    margin: 0 auto;
+    padding: auto;
+    font-family: 'Montserrat' , sans-serif;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+div.frase{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  height: 100vh;
+  background-color: rgb(12, 98, 227);
+ color: aliceblue;
+ font-size: xx-large;
+}
+div.cadastro{
+    display: flex;
+    align-items: center;
+    align-content: center;
+ 
+    width: 50%;
+    height: 100vh;
+   background-color: whitesmoke;
+   font-size: large;
+  
+}
+div.cadastro form{
+   margin: 5rem;
+}
+.cadastrados h5{
+    text-align: center; 
+    border: 1px solid rgb(12, 98, 227);
+    border-radius: 5px;
+     width: 15rem;
+}
+.cadastrados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cadastrados h5:hover{
+    background-color: rgb(12, 98, 227) ;
+    color: whitesmoke;
+}
