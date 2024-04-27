@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculos cadastrados</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body style="background-color: whitesmoke;">
+    <h2>Currículos Cadastrados </h2>
+    <div id="curriculos-list"></div>
+    <script>
+        $(document).ready(function() {
+            $.get('/curriculos', function(data) {
+            
+                $('#curriculos-list').empty();
+
+                data.forEach(function(curriculo) {
+                    $('#curriculos-list').append(`<p>${curriculo.nome}</p>`)
+                })
+            })
+        })
+    </script>
+</body>
+</html>

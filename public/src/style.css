@@ -1,0 +1,83 @@
+body{
+    margin: 0 auto;
+    padding: auto;
+    font-family: 'Montserrat' , sans-serif;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    color: rgb(35, 35, 35);
+}
+div.frase{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  height: 100vh;
+  background-color: rgb(12, 98, 227);
+ color: aliceblue;
+ font-size: xx-large;
+}
+div.cadastro{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+   background-color: whitesmoke;
+   font-size: large;
+  
+}
+div.cadastro form{
+   margin-left: 10rem;
+   margin-top: 5rem;
+}
+div.cadastro input{
+    border: 1px solid  rgb(12, 98, 227);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 4px 4px;
+}
+.cadastrados h5{
+    text-align: center; 
+    border: 1px solid rgb(12, 98, 227);
+    border-radius: 5px;
+     width: 15rem;
+     padding: 5px 5px;
+     color: rgb(35, 35, 35);
+     margin-top: 15rem;
+}
+.cadastrados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.cadastrados h5:hover{
+    background-color: rgb(12, 98, 227) ;
+    color: whitesmoke;
+
+}
+
+#btEnviar{
+    background-color: rgb(12, 98, 227);
+    color: white;
+    border: transparent;
+    font-size: medium;
+    border-radius: 12px;
+    width: 30%;
+    padding: 4px 4px;
+}
+#btEnviar:hover{
+    background-color:white ;
+    color:  rgb(12, 98, 227) ;
+    border: 1px solid  rgb(12, 98, 227) ;
+}
+.bt-caixa{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
