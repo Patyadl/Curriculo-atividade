@@ -1,5 +1,4 @@
 import express from 'express'
-import path from 'path'
 import { routes } from './src/routes/index.mjs'
 import pg from 'pg';
 const { Pool } = pg;
@@ -12,8 +11,7 @@ const __dirname = dirname(__filename);
 const app = express()
 
 
-app.use(express.static(join(__dirname, 'static')));
-app.use(express.static(join(__dirname, 'src')));
+app.use(express.static(join(__dirname, 'src')))
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
@@ -39,12 +37,6 @@ pool.query(`
 })
 
 
-
-app.get('/site', (req, res) => {
-  res.sendFile(path.join(__dirname,  'src', 'index.html'))
-  
-})
-
 app.post('/dados', (req, res) => {
   const { nome, idade, email, educacao } = req.body
   
@@ -60,6 +52,5 @@ app.post('/dados', (req, res) => {
 
 const port = 3000
 app.listen(port, () => {
-  console.log(`Servidor está rodando na porta http://localhost:${port}`)
-})
-
+  console.log(`Servidor está rodando na porta`)})
+export {app}
